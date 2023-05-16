@@ -1,0 +1,8 @@
+node_modules
+*.todo
+app
+node6/
+*/*.min.*
+vendor/fontawesome-free/package.json
+css/*
+.DS_Store

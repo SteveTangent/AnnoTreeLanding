@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>AnnoTree</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- Plugin CSS -->
+    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css">
+
+    <!-- Custom styles for this template -->
+    <link href="css/freelancer.min.css" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="./favicon.png"/>
+  </head>
+
+  <body id="page-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg bg-secondary fixed-top text-uppercase" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">
+          AnnoTREE
+        </a>
+        <button class="navbar-toggler navbar-toggler-right text-uppercase bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          About
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item mx-0 mx-lg-1">
+              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#features">Features</a>
+            </li>
+            <li class="nav-item mx-0 mx-lg-1">
+              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#cite">Cite us</a>
+            </li>
+            <li class="nav-item mx-0 mx-lg-1">
+              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#team">Team</a>
+            </li>
+            <li class="nav-item mx-0 mx-lg-1">
+              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="masthead bg-primary text-white text-center">
+      <div class="container">
+        <img class="img-fluid mb-5 d-block mx-auto" src="img/annotree_logo_light_transparent.png" alt="AnnoTree">
+        <div class="text-center mt-4">
+          <a class="btn btn-xl btn-outline-light" href="app/">
+            Launch
+          </a>
+        </div>
+<!--
+	<div class="text-center mt-4">
+          <a class="btn btn-xl btn-outline-light" href="app/">
+            Launch2
+          </a>
+        </div>
+-->
+        <hr class="star-light">
+        <div class="mx-auto" id="project-about">
+          <p class="fontweight-light mb-0">AnnoTree is a web tool for visualization of genome annotations across large phylogenetic trees. AnnoTree version 1.2 includes <a href="https://www.genome.jp/kegg/" rel="nofollow">KEGG</a>, <a href="https://pfam.xfam.org/" rel="nofollow">Pfam</a> and <a href="https://www.jcvi.org/tigrfams" rel="nofollow">Tigrfam</a> annotations for over 30,000 bacterial and 1600 archaeal genomes. Phylogenetic and taxonomy information is derived from the <a href="http://gtdb.ecogenomic.org/" rel="nofollow">GTDB</a> database (Release R95).</p>
+<!--
+          <p class="fontweight-light mb-0">Future releases will include additional types of functional annotations and expand the phylogenomic framework to Eukaryotes.</p>
+-->
+        </div>
+      </div>
+    </header>
+
+    <!-- About Section -->
+    <section class=" mb-0" id="features">
+      <div class="container">
+        <h2 class="text-center text-uppercase">Features</h2>
+        <hr class="star-dark mb-5">
+        <div class="row">
+          <div class="col-lg-5 ml-auto">
+            <h3>Painted phylogenies in three steps</h3>
+            <p class="lead mb-0">(1) Highlight taxonomies of interest with the annotation or taxonomy search option; (2) Zoom to any level of detail; (3) Download a publication-quality SVG or a NEWICK file.</p>
+          </div>
+          <div class="col-lg-3 offset-lg-1 mr-auto">
+            <img class="img-fluid mb-5 d-block mx-auto" src="img/reductive-dehalogenase-distribution.png" alt="Reductive Dehalogenase">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-3 offset-lg-2 mr-auto">
+            <img class="img-fluid mb-5 d-block mx-auto" src="img/pie-chart.png" alt="Summary distribution of reductive dehalogenase">
+          </div>
+          <div class="col-lg-5 ml-auto">
+            <h3>A concise view of taxonomic distribution</h3>
+            <p class="lead mb-0">Instantly summarize the taxonomic distribution of Pfam protein domains, KEGG orthologs, or TIGRFAM families across all phylogenetic levels.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-5 ml-auto">
+            <h3>Details, down to the last residue</h3>
+            <p class="lead mb-0">Examine and download every annotation confidence score and protein sequence directly from the interface.</p>
+          </div>
+          <div class="col-lg-3 offset-lg-2 mr-auto">
+            <img class="img-fluid mb-5 d-block mx-auto" src="img/node-pop-up.png" alt="Download CSV through pop up">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-3 offset-lg-2 mr-auto">
+            <img class="img-fluid mb-5 d-block mx-auto" src="img/group-band-view.png" alt="Orders annoted by phylum bands">
+          </div>
+          <div class="col-lg-5 ml-auto">
+            <h3>Taxonomic annotations</h3>
+            <p class="lead mb-0">Automatically add taxonomic labels to your trees at any taxonomic level.</p>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <section class="bg-primary text-white" id="cite">
+      <div class="container">
+        <h2 class="text-center text-uppercase mb-0">Cite us</h2>
+        <hr class="star-light mb-5">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <p>Mendler K, Chen H, Parks DH, Hug LA, Doxey AC. (2019) AnnoTree: visualization and exploration of a functionally annotated microbial tree of life. Nucleic Acids Research 47:4442-4448. doi: <a href="http://dx.doi.org/10.1093/nar/gkz246" rel="nofollow">http://dx.doi.org/10.1093/nar/gkz246</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="team">
+      <div class="container">
+        <h2 class="text-center text-uppercase text-secondary mb-0">Team</h2>
+        <hr class="star-dark mb-5">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <p>AnnoTree is developed by the Doxey Lab at the University of Waterloo.</p>
+            <ul>
+              <li>Han Chen (core developer)</li>
+              <li>Kerrin Mendler (core developer)</li>
+              <li>Huagang Tan (core developer)</li>
+              <li>Briallen Lobb (tool design)</li>
+              <li>Donovan Parks (GTDB genomic data and TOL)</li>
+              <li>Laura Hug (phylogenomics, case studies, TOL)</li>
+              <li>Andrew Doxey (tool conception/design)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer text-center bg-secondary">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 mb-5 mb-lg-0">
+            <h4 class="text-uppercase mb-4">Downloads</h4>
+              Visit the <a href="app/downloads.html" target="_blank" rel="nofollow">
+              Downloads page</a>.
+          </div>
+          <div class="col-md-4 mb-5 mb-lg-0" id="contact">
+            <h4 class="text-uppercase mb-4">Contact Us</h4>
+            <p class="lead mb-0">
+              Please email
+              <b>Andrew Doxey</b> (acdoxey@uwaterloo.ca).
+            </p>
+          </div>
+          <div class="col-md-4">
+            <h4 class="text-uppercase mb-4">License</h4>
+            <p class="lead mb-0"><a href="http://creativecommons.org/licenses/by/4.0/" rel="nofollow"><img alt="Creative Commons License" src="https://camo.githubusercontent.com/c2de2a24e362957ed52c29f9f58f99b4c5ca5c1e/68747470733a2f2f692e6372656174697665636f6d6d6f6e732e6f72672f6c2f62792f342e302f38307831352e706e67" data-canonical-src="https://i.creativecommons.org/l/by/4.0/80x15.png" style="max-width:100%;"></a><br>The website is licensed under a <a href="http://creativecommons.org/licenses/by/4.0/" rel="nofollow">Creative Commons Attribution 4.0 International License</a>.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="copyright py-4 text-center text-white">
+      <div class="container">
+        <small>&copy; Doxey Lab 2017-2022, University of Waterloo Department of Biology</small>
+      </div>
+    </div>
+
+    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+    <div class="scroll-to-top d-lg-none position-fixed ">
+      <a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top">
+        <i class="fa fa-chevron-up"></i>
+      </a>
+    </div>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.min.js"></script>
+    <script src="js/contact_me.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/freelancer.min.js"></script>
+
+  </body>
+
+</html>

@@ -1,0 +1,39 @@
+header.masthead {
+  padding-top: calc(3rem + 40px);
+  padding-bottom: 6rem;
+  h1 {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+  h2 {
+    font-size: 1.3rem;
+    @include body-font;
+  }
+  img{
+    margin-bottom: -1rem !important;
+  }
+  .btn-outline-light{
+    color: white;
+    &:hover{
+      color: $primary;
+    }
+  }
+  #project-about{
+    max-width: 50%;
+    text-align: justify;
+  }
+}
+@media (min-width: 992px) {
+  header.masthead {
+    padding-top: calc(3rem + 76px);
+    padding-bottom: 6rem;
+    h1 {
+      font-size: 4.75em;
+      line-height: 4rem;
+    }
+    h2 {
+      font-size: 1.75em;
+    }
+
+  }
+}
