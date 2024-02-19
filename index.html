@@ -2,6 +2,48 @@
 <html lang="en">
 
   <head>
+    <style>
+      .overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.7);
+        z-index: 1;
+      }
+
+      .popup {
+        position: fixed;
+        top: 20%;
+        left: 20%;
+        transform: translate(-50%, -50%);
+        width: 20%;
+        padding: 20px;
+        background: linear-gradient(to bottom right, #ffffff, #d9d9d9);
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+        z-index: 2;
+        transition: all 0.3s ease-in-out;
+      }
+
+      .popup button {
+        display: block;
+        width: 100px;
+        margin: 20px auto 0;
+        padding: 10px;
+        border: none;
+        background-color: #007bff;
+        color: white;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      .popup button:hover {
+        background-color: #0056b3;
+      }
+    </style>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -27,6 +69,13 @@
   </head>
 
   <body id="page-top">
+  <script>
+
+    function closePopup() {
+      document.getElementById("popup").style.display = "none";
+      document.getElementById("overlay").style.display = "none";
+    }
+  </script>
 
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg bg-secondary fixed-top text-uppercase" id="mainNav">
@@ -57,10 +106,19 @@
       </div>
     </nav>
 
-    <!-- Header -->
+  <!-- Header -->
     <header class="masthead bg-primary text-white text-center">
       <div class="container">
         <img class="img-fluid mb-5 d-block mx-auto" src="img/annotree_logo_light_transparent.png" alt="AnnoTree">
+        <div class="overlay" id="overlay"></div>
+
+        <div class="popup" id="popup">
+          <a style="color: #0b0b0b">Interested in visualizing genomes or gene neighborhoods?
+            Explore <a href="http://annoview.uwaterloo.ca/annoview/" style="color: #0000ff; text-decoration: underline;">AnnoView!</a>
+          </a>
+          <button onclick="closePopup()">Close</button>
+        </div>
+
         <div class="text-center mt-4">
           <a class="btn btn-xl btn-outline-light" href="app/">
             Launch
